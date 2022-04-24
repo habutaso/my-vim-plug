@@ -1,5 +1,8 @@
 call plug#begin()
 
+" git
+Plug 'tpope/vim-fugitive'
+
 " file tree
 Plug 'preservim/nerdtree'
 
@@ -83,4 +86,5 @@ set background=dark
 syntax on
 colorscheme candid
 let g:lightline = { 'colorscheme': 'candid' }
+let s:colors = candid#GetColors()
 

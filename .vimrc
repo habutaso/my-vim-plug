@@ -11,6 +11,11 @@ set ruler
 set number
 set cursorline
 
+"" 新しいウィンドウを下に開く
+set splitbelow
+"" 新しいウィンドウを右に開く
+set splitright
+
 " 自動補完
 inoremap [ []<LEFT>
 inoremap { {}<LEFT>
@@ -19,8 +24,7 @@ inoremap ( ()<LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 
-nnoremap <C-c> :sp<CR>:terminal<CR>
-nnoremap <C-k><C-c> :vs<CR>:terminal<CR>
+nnoremap <C-k> :sp<CR>:terminal<CR>
 
 " neovim ターミナル移動
 tnoremap <silent> <ESC> <C-\><C-n>
